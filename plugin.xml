@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.opros.mainpreference.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.opros.mainpreference.preferences.MainPreferencePage"
+            id="org.opros.mainpreference.prefs.view" icon="images/opros.png"
+            name="%page.name">
+
+      </page>
+   </extension>
+
+</plugin>
